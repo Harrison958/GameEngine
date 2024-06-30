@@ -86,10 +86,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>C:\Users\Harrison Plowes\Desktop\OpenGL\Projects\GameEngine\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,6 +125,8 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>C:\Users\Harrison Plowes\Desktop\OpenGL\Projects\GameEngine\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -161,6 +165,15 @@
     <ClInclude Include="src\Renderer\Renderer.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="external\src\glad\glad.c" />
+    <ClCompile Include="external\src\imgui\imgui.cpp" />
+    <ClCompile Include="external\src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="external\src\imgui\imgui_draw.cpp" />
+    <ClCompile Include="external\src\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="external\src\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="external\src\imgui\imgui_tables.cpp" />
+    <ClCompile Include="external\src\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="external\src\stb\stb.c" />
     <ClCompile Include="src\Core\Input.cpp" />
     <ClCompile Include="src\Core\Player.cpp" />
     <ClCompile Include="src\Core\Window.cpp" />
@@ -171,12 +184,14 @@
   <ItemGroup>
     <None Include="res\shaders\lighting.frag" />
     <None Include="res\shaders\lighting.vert" />
-    <None Include="res\shaders\model.frag" />
-    <None Include="res\shaders\model.vert" />
+    <None Include="res\shaders\nolighting.frag" />
+    <None Include="res\shaders\nolighting.vert" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\textures\container2.png" />
     <Image Include="res\textures\container2_specular.png" />
+    <Image Include="res\textures\marble.jpg" />
+    <Image Include="res\textures\metal.png" />
     <Image Include="res\textures\placeholderDark.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

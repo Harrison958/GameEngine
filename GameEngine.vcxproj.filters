@@ -18,14 +18,14 @@
     <Filter Include="Resource Files\Shaders">
       <UniqueIdentifier>{cf26131b-a916-4835-9762-a345777c067e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\Textures">
-      <UniqueIdentifier>{6aac25dc-ad81-4b6b-800b-e69519c57b3d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="External">
       <UniqueIdentifier>{3fbb0b83-8ead-43d5-9fef-242aa0d819fb}</UniqueIdentifier>
     </Filter>
     <Filter Include="External\imgui">
       <UniqueIdentifier>{c621a9da-218d-472f-a7da-88db3cee4124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{45c3d0c6-9470-4d27-b2ca-d19a4d80980d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +79,33 @@
     <ClCompile Include="src\Renderer\Renderer.cpp">
       <Filter>Source Files\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="external\src\glad\glad.c">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\stb\stb.c">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\imgui\imgui.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\imgui\imgui_demo.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\imgui\imgui_draw.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\imgui\imgui_impl_glfw.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\imgui\imgui_impl_opengl3.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\imgui\imgui_tables.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="external\src\imgui\imgui_widgets.cpp">
+      <Filter>External\imgui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\shaders\lighting.frag">
@@ -87,10 +114,10 @@
     <None Include="res\shaders\lighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="res\shaders\model.frag">
+    <None Include="res\shaders\nolighting.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="res\shaders\model.vert">
+    <None Include="res\shaders\nolighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
   </ItemGroup>
@@ -99,6 +126,12 @@
       <Filter>Resource Files\Textures</Filter>
     </Image>
     <Image Include="res\textures\container2_specular.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="res\textures\marble.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="res\textures\metal.png">
       <Filter>Resource Files\Textures</Filter>
     </Image>
     <Image Include="res\textures\placeholderDark.png">
